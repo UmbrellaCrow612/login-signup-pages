@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
-import { Github, Gitlab, Slack } from "lucide-react";
+import { Gitlab } from "lucide-react";
+import { Github } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
@@ -18,9 +18,9 @@ export default function Page() {
     <div className="flex items-center justify-center min-h-screen">
       <Card>
         <CardHeader>
-          <CardTitle>Login</CardTitle>
+          <CardTitle>Sign up</CardTitle>
           <CardDescription>
-            You need to login in order to access the application
+            Craete an account to acess this application
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-6">
@@ -33,7 +33,7 @@ export default function Page() {
             <Input type="password" id="password" placeholder="Password" />
           </div>
 
-          <Button>Login</Button>
+          <Button>Sign up</Button>
 
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
@@ -56,9 +56,9 @@ export default function Page() {
         </CardContent>
         <CardFooter className="">
           <span className="text-sm bg-background text-muted-foreground">
-            Dont have an account{" "}
-            <Link href="/signup" className="font-semibold underline">
-              Sign up
+            Already have an account{" "}
+            <Link href="/" className="font-semibold underline">
+              Sign in
             </Link>
           </span>
         </CardFooter>
