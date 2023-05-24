@@ -52,10 +52,6 @@ export default function Page() {
             <Gitlab className="w-4 h-4 mr-2" />
             GitLab
           </Button>
-          <Button variant="outline" type="button">
-            <Slack className="w-4 h-4 mr-2" />
-            Slack
-          </Button>
         </CardContent>
         <CardFooter className="">
           <span className="text-sm bg-background text-muted-foreground">
